@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рабочая директория</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 40px;
+        }
+        .dir-list {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+        }
+        .dir-list li {
+            background-color: #ffffff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .dir-list li:hover {
+            transform: translateY(-5px);
+        }
+        a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #333;
+            display: block;
+            text-align: center;
+        }
+        a:hover {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Список файлов:</h2>
+        <ul class="dir-list">
+            {% for dir in dir_list %}
+                <li>
+                    <p>{{ dir }}</p>
+                </li>
+            {% endfor %}
+        <br>
+        <a href="{% url 'home' %}">Вернуться на главную</a>
+    </div>
+</body>
+</html>
