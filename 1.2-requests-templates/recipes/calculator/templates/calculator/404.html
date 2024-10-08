@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>404</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Ой, страница не найдена!</h1>
+        <p>Возможно, я не знаю такого рецепта, или это был простой ошибочный запрос.</p><br>
+        <a href="{% url 'main' %}">Вернуться на главную страницу</a>
+        <p>Или вы можете проверить правильность ввода адреса и повторить попытку.</p>
+    </div>
+</body>
+</html>

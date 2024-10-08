@@ -16,6 +16,14 @@ Including another URLconf
 
 from django.urls import path
 
+from calculator.views import recipe_page, home_page
+from django.conf import settings
+from django.conf.urls.static import static
+
 urlpatterns = [
-    # здесь зарегистрируйте вашу view-функцию
+    path('', home_page, name='main'),
+    path('<recipe>/', recipe_page, name='dish')
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

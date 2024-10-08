@@ -4,6 +4,8 @@ from django.shortcuts import render, reverse
 import datetime, os
 
 
+
+
 def home_view(request):
     template_name = 'app/home.html'
     pages = {

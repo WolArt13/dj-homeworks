@@ -21,13 +21,24 @@
 </head>
 <body>
 <div class="container">
+    <p style="font-size: 30px;">Расширенный поиск</p>
+    <form action="{% url 'bus_stations' %}" method="get">
+        <select name="search_field">
+            <option value="name" {% if search_field == 'name' %}selected{% endif %}>Название</option>
+            <option value="street" {% if search_field == 'street' %}selected{% endif %}>Улица</option>
+            <option value="district" {% if search_field == 'district' %}selected{% endif %}>Район</option>
+        </select>
+        <input type="text" name="q" placeholder="Введите поисковый запрос" value="{{ q|default:'' }}">
+        <button type="submit">Поиск</button>
+        <a class="button" href="{% url 'bus_stations' %}">Сброс</a>
+    </form>
     <div class="row">
         <table class="u-full-width">
             <thead>
             <tr>
-                <th>Name</th>
-                <th>Street</th>
-                <th>District</th>
+                <th>Название</th>
+                <th>Улица</th>
+                <th>Район</th>
             </tr>
             </thead>
             <tbody>
@@ -40,14 +51,17 @@
             {% endfor %}
             </tbody>
         </table>
-
+        <div class="pagination">
         {% if page.has_previous %}
-            <a class="button button-primary" href="?page={{ page.previous_page_number }}">⟵</a>
+            <a class="button button-primary" href="?{% if q and search_field %}search_field={{ search_field }}&q={{ q }}&{% endif %}page=1">⇐</a>
+            <a class="button button-primary" href="?{% if q and search_field %}search_field={{ search_field }}&q={{ q }}&{% endif %}page={{ page.previous_page_number }}">⟵</a>
         {% endif %}
         <a class="button disabled" href="">{{ page.number }}</a>
         {% if page.has_next %}
-            <a class="button button-primary" href="?page={{ page.next_page_number }}">⟶</a>
+            <a class="button button-primary" href="?{% if q and search_field %}search_field={{ search_field }}&q={{ q }}&{% endif %}page={{ page.next_page_number }}">⟶</a>
+            <a class="button button-primary" href="?{% if q and search_field %}search_field={{ search_field }}&q={{ q }}&{% endif %}page={{ total_pages }}">⇒</a>
         {% endif %}
+        </div>
     </div>
 </div>
 </body>

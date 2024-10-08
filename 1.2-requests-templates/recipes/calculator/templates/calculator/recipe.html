@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ dish }}</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ dish }}</h1>
+        <h2>Ингредиенты:</h2>
+
+        {% if recipe %}
+            <ul>
+                {% for ingredient, amount in recipe.items %}
+                    <li>{{ ingredient }}: {{ amount }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>Ингредиенты отсутствуют.</p>
+        {% endif %}
+        <br>
+        <a href="{% url 'main' %}?servings={{ servings }}">Вернуться</a>
+    </div>
+</body>
+</html>
