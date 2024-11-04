@@ -50,5 +50,5 @@ python manage.py runserver
 - Для загрузки начальных данных модели Book необходимо выполнить команду:
 
 ```bash
-python manage.py loaddata fixtures/books.json
+python manage.py import_books
 ```

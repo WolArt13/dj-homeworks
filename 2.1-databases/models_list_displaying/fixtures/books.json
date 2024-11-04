@@ -16,5 +16,167 @@
       "author": "Джордж Оруэл",
       "pub_date": "2016-12-06"
     }
+  },
+  {
+    "model": "books.book",
+    "pk": 3,
+    "fields": {
+      "name": "Преступление и наказание",
+      "author": "Ф.М. Достоевский",
+      "pub_date": "2019-03-15"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 4,
+    "fields": {
+      "name": "Гордость и предубеждение",
+      "author": "Джейн Остин",
+      "pub_date": "2017-05-22"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 5,
+    "fields": {
+      "name": "Мастер и Маргарита",
+      "author": "М.А. Булгаков",
+      "pub_date": "2020-09-10"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 6,
+    "fields": {
+      "name": "Унесенные ветром",
+      "author": "Маргарет Митчелл",
+      "pub_date": "2018-11-12"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 7,
+    "fields": {
+      "name": "Три товарища",
+      "author": "Эрих Мария Ремарк",
+      "pub_date": "2019-07-25"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 8,
+    "fields": {
+      "name": "Маленький принц",
+      "author": "Антуан де Сент-Экзюпери",
+      "pub_date": "2015-08-30"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 9,
+    "fields": {
+      "name": "Анна Каренина",
+      "author": "Л.Н. Толстой",
+      "pub_date": "2016-01-14"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 10,
+    "fields": {
+      "name": "Старик и море",
+      "author": "Эрнест Хемингуэй",
+      "pub_date": "2017-04-18"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 11,
+    "fields": {
+      "name": "Граф Монте-Кристо",
+      "author": "Александр Дюма",
+      "pub_date": "2018-03-27"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 12,
+    "fields": {
+      "name": "Лолита",
+      "author": "Владимир Набоков",
+      "pub_date": "2020-06-05"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 13,
+    "fields": {
+      "name": "Великий Гэтсби",
+      "author": "Ф. Скотт Фицджеральд",
+      "pub_date": "2019-02-13"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 14,
+    "fields": {
+      "name": "Портрет Дориана Грея",
+      "author": "Оскар Уайльд",
+      "pub_date": "2016-09-28"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 15,
+    "fields": {
+      "name": "Гарри Поттер и философский камень",
+      "author": "Дж.К. Роулинг",
+      "pub_date": "2018-05-16"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 16,
+    "fields": {
+      "name": "Приключения Шерлока Холмса",
+      "author": "Артур Конан Дойл",
+      "pub_date": "2017-10-11"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 17,
+    "fields": {
+      "name": "Сто лет одиночества",
+      "author": "Габриэль Гарсиа Маркес",
+      "pub_date": "2020-02-19"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 18,
+    "fields": {
+      "name": "Дети капитана Гранта",
+      "author": "Жюль Верн",
+      "pub_date": "2019-11-08"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 19,
+    "fields": {
+      "name": "Человек-невидимка",
+      "author": "Герберт Уэллс",
+      "pub_date": "2015-06-27"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 20,
+    "fields": {
+      "name": "Тихий Дон",
+      "author": "М.А. Шолохов",
+      "pub_date": "2017-12-20"
+    }
   }
 ]
